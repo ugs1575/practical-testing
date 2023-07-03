@@ -1,4 +1,4 @@
-package sample.cafekiosk.spring.api.config;
+package sample.cafekiosk.spring.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;

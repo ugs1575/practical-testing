@@ -11,11 +11,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.transaction.annotation.Transactional;
 
+import sample.cafekiosk.spring.IntegrationTestSupport;
 import sample.cafekiosk.spring.domain.product.Product;
 
-@DataJpaTest
-class StockRepositoryTest {
+@Transactional
+class StockRepositoryTest extends IntegrationTestSupport {
 
 	@Autowired
 	private StockRepository stockRepository;
